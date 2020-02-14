@@ -10,14 +10,14 @@ body {
 
 #navbar__main {
   display: grid;
-  grid-template-areas: 'logo links links links links links links links links';
+  grid-template-areas: 'logo links links links links ';
   background: #fff;
   color: #000; }
   #navbar__main #navbar__box--logo {
     grid-area: logo;
     border-right: 1px solid #d7dddf; }
     #navbar__main #navbar__box--logo img {
-      width: 50%;
+      max-width: 250px;
       display: block;
       margin: 20px auto; }
   #navbar__main #navbar__links {
@@ -75,10 +75,45 @@ body {
   padding: 0 50px;
   font-size: 1.4rem;
   height: 75px; }
-  #navbar__secondary #navbar__secondary--links {
+  #navbar__secondary ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none; }
-    #navbar__secondary #navbar__secondary--links li {
+    #navbar__secondary ul li {
       margin: 3rem; }
+      #navbar__secondary ul li:first-child {
+        border-bottom: 5px #fff solid; }
+
+#showcase {
+  background: #333 url("../img/main.jpg") no-repeat center center/cover;
+  height: 70vh;
+  color: #fff; }
+  #showcase .showcase__content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 2rem; }
+    #showcase .showcase__content .showcase__content--card {
+      margin-left: 200px;
+      width: 350px;
+      background: #fff;
+      opacity: 0.9;
+      color: #000;
+      text-align: left;
+      padding: 40px;
+      font-size: 1.2;
+      line-height: 1.6; }
+      #showcase .showcase__content .showcase__content--card h2 {
+        font-size: 2.2rem !important; }
+      #showcase .showcase__content .showcase__content--card .btn {
+        display: inline-block;
+        width: 100%;
+        color: #fff;
+        background: #027edb;
+        padding: 0.5rem 2rem;
+        border: none;
+        text-decoration: none;
+        border-radius: 3px;
+        text-align: center;
+        margin-top: 15px; }
