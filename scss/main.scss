@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
+@import 'config';
 
 * {
     box-sizing: border-box;
@@ -12,6 +12,7 @@ body {
     line-height: 1.4;
 }
 
+// Main navbar
 #navbar__main {
     display: grid;
     grid-template-areas:
@@ -21,7 +22,8 @@ body {
 
     #navbar__box--logo {
         grid-area: logo;
-        border-right: 1px solid rgb(215, 221, 223);
+
+        border-right: $box-border;
 
         img {
             width: 50%;
@@ -34,7 +36,7 @@ body {
         grid-area: links;
 
         #navbar__box--small {
-            border-bottom: 1px solid rgb(215, 221, 223);
+            border-bottom: $box-border;
             font-size: 14px;
             padding-right: 50px;
 
@@ -52,14 +54,14 @@ body {
                         span:first-child {
                             background: #000;
                             color: yellow;
-                            border: 1px solid rgb(215, 221, 223);
+                            border: $box-border;
                             padding: 3px
                         }
 
                         span:nth-child(2) {
                             background: #fff;
                             color: #000;
-                            border: 1px solid rgb(215, 221, 223);
+                            border: $box-border;
                             padding: 3px
                         }
                     }
@@ -68,7 +70,7 @@ body {
                         span {
                             background: #fff;
                             color: #000;
-                            border: 1px solid rgb(215, 221, 223);
+                            border: $box-border;
                             padding: 3px
                         }
                     }
@@ -102,6 +104,29 @@ body {
                 }
 
             }
+        }
+    }
+}
+
+// Secondary Navbar
+#navbar__secondary {
+    display: flex;
+    background: #023e78;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    font-size: 1.4rem;
+    height: 75px;
+
+    #navbar__secondary--links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+
+        li {
+            margin: 3rem;
         }
     }
 }
