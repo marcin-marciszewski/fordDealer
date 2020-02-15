@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+#showcase .showcase__content .showcase__content--card .btn, .container .btn {
+  color: #fff;
+  background: #027edb;
+  border: none;
+  text-decoration: none;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer; }
+
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -121,15 +131,7 @@ body {
       #showcase .showcase__content .showcase__content--card .btn {
         display: inline-block;
         width: 100%;
-        color: #fff;
-        background: #027edb;
-        padding: 0.5rem 2rem;
-        border: none;
-        text-decoration: none;
-        border-radius: 3px;
-        text-align: center;
-        margin-top: 15px;
-        cursor: pointer; }
+        padding: 20px; }
 
 #custom .custom__links {
   text-align: center; }
@@ -139,43 +141,49 @@ body {
     list-style: none;
     display: inline-table;
     color: blue; }
-    #custom .custom__links ul li {
-      display: inline;
+    #custom .custom__links ul a {
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
+      border: none;
       border: 1px solid blue;
-      padding: 15px 100px; }
-      #custom .custom__links ul li:nth-child(odd) {
+      padding: 10px 100px; }
+      #custom .custom__links ul a:nth-child(odd) {
         border-right: none; }
-      #custom .custom__links ul li:nth-child(3) {
+      #custom .custom__links ul a:nth-child(3) {
         border-left: none; }
-      #custom .custom__links ul li:hover {
+      #custom .custom__links ul a.active {
         background: #023e78;
         color: #fff; }
-      #custom .custom__links ul li a {
-        text-decoration: none;
-        color: inherit; }
 
 #custom #custom__content {
-  height: 70vh; }
+  height: 75vh; }
 
-#dimensions {
+.container #dimensions__content {
   padding: 50px;
   display: grid;
   grid-gap: 0.5rem;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: dense; }
-  #dimensions table {
+  .container #dimensions__content table {
     border-collapse: collapse;
     width: 100%;
     height: 100%; }
-    #dimensions table tr th {
+    .container #dimensions__content table tr th {
       text-align: left;
       font-weight: 500;
       padding-left: 20px;
       font-size: 1.3rem; }
-    #dimensions table tr .table__title {
+    .container #dimensions__content table tr .table__title {
       background: #e5e8e8; }
-  #dimensions td {
+  .container #dimensions__content td {
     border: 1px solid black;
     padding: 0 15px; }
-  #dimensions img {
+  .container #dimensions__content img {
     margin-top: 75px; }
+
+.container .btn {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  padding: 15px; }

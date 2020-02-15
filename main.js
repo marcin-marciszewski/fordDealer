@@ -1,5 +1,6 @@
+// Change subpages
 $(document).ready(function () {
-    var trigger = $('.custom__links ul li a'),
+    var trigger = $('.custom__links ul a'),
         custom__content = $('#custom__content')
     custom__content.load('subpages/dimensions.html');
 
@@ -10,4 +11,11 @@ $(document).ready(function () {
         custom__content.load('subpages/' + target + '.html');
         return false;
     })
+})
+
+// Add color to active subpage button
+
+$('.custom__links ul a').on('click', function () {
+    $(this).siblings().removeClass('active')
+    $(this).addClass('active');
 })
