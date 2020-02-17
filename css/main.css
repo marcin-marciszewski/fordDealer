@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-#showcase .showcase__content .showcase__content--card .btn, .container .btn, #description .btn, #motability .motability__content .motability__content--card .btn {
+#showcase .showcase__content .showcase__content--card .btn, .container .btn, #description .btn, #motability .motability__content .motability__content--card .btn, #contact__form .btn {
   color: #fff;
   background: #027edb;
   border: none;
@@ -386,14 +386,15 @@ footer {
   footer #footer__content {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-gap: 1rem; }
-    footer #footer__content .logo-box img {
-      margin-top: 50px; }
+    grid-gap: 3rem; }
+    footer #footer__content .logo-box {
+      margin-right: 100px; }
+      footer #footer__content .logo-box img {
+        margin-top: 50px; }
   footer .links-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 100px; }
+    justify-content: center; }
     footer .links-box a {
       text-decoration: none;
       color: inherit;
@@ -403,3 +404,41 @@ footer {
   footer #address {
     font-size: 12px;
     padding: 40px 0 20px 0; }
+
+#contact__form {
+  float: right;
+  margin: 50px 10px;
+  border: 2px grey solid;
+  margin-right: 200px;
+  max-width: 500px;
+  background: #fff;
+  opacity: 0.9;
+  color: #000;
+  text-align: left;
+  padding: 40px;
+  font-size: 1.2;
+  line-height: 1.6; }
+  #contact__form form {
+    margin-top: 10px;
+    display: flex; }
+    #contact__form form input {
+      margin: 0 5px;
+      font-size: 16px;
+      height: 35px; }
+    #contact__form form #name,
+    #contact__form form #number {
+      width: 45%;
+      padding-left: 10px; }
+    #contact__form form #submit {
+      padding: 0 7px;
+      background: darkblue;
+      color: white;
+      border: none;
+      outline: none;
+      border-radius: 5px; }
+  #contact__form h2 {
+    font-size: 2.2rem !important; }
+  #contact__form .btn {
+    display: inline-block;
+    width: 100%;
+    padding: 20px; }
