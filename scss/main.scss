@@ -569,3 +569,42 @@ body {
     }
   }
 }
+
+// Footer
+footer {
+  color: grey;
+  height: 35vh;
+  background: #43484d;
+
+  #footer__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+
+    .logo-box {
+      img {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .links-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      color: #fff;
+      padding: 5px;
+      font-size: 20px;
+    }
+  }
+
+  #address {
+    font-size: 12px;
+    padding: 40px 0 20px 0;
+  }
+}
