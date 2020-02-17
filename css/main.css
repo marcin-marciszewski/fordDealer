@@ -96,13 +96,15 @@ body {
     justify-content: space-around;
     align-items: center;
     list-style: none; }
-    #navbar__secondary ul li {
+    #navbar__secondary ul div a {
+      text-decoration: none;
+      color: inherit;
       margin: 3rem; }
-      #navbar__secondary ul li:first-child {
-        border-bottom: 5px #fff solid; }
-      #navbar__secondary ul li a {
-        text-decoration: none;
-        color: inherit; }
+    #navbar__secondary ul div:first-child {
+      border-bottom: 5px #fff solid;
+      height: 125px;
+      padding-top: 70px;
+      margin-bottom: 55px; }
     #navbar__secondary ul #navbar__secondary--menu a {
       text-decoration: none;
       color: inherit; }
@@ -135,29 +137,32 @@ body {
 
 #custom .custom__links {
   text-align: center; }
-  #custom .custom__links ul {
+  #custom .custom__links .custom__links--content {
+    display: flex;
     margin-top: 30px;
     height: 100px;
     list-style: none;
     display: inline-table;
     color: blue; }
-    #custom .custom__links ul a {
+    #custom .custom__links .custom__links--content a {
+      white-space: nowrap;
+      width: 25%;
       text-decoration: none;
       color: inherit;
       display: inline-block;
       border: none;
       border: 1px solid blue;
       padding: 10px 100px; }
-      #custom .custom__links ul a:nth-child(odd) {
+      #custom .custom__links .custom__links--content a:nth-child(odd) {
         border-right: none; }
-      #custom .custom__links ul a:nth-child(3) {
+      #custom .custom__links .custom__links--content a:nth-child(3) {
         border-left: none; }
-      #custom .custom__links ul a.active {
+      #custom .custom__links .custom__links--content a.active {
         background: #023e78;
         color: #fff; }
 
 #custom #custom__content {
-  height: 75vh; }
+  height: 80vh; }
 
 .container #dimensions__content {
   padding: 50px;
@@ -187,3 +192,58 @@ body {
   margin: 0 auto;
   width: 280px;
   padding: 15px; }
+
+#colours img {
+  width: 80%;
+  display: block;
+  margin: auto; }
+
+#colours #colours__choice {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #colours #colours__choice i {
+    margin: 10px; }
+  #colours #colours__choice .fas {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 5px #615c5c;
+    padding: 0.1rem 0.1rem; }
+  #colours #colours__choice .fas:first-child {
+    color: #adada3; }
+  #colours #colours__choice .fas:nth-child(2) {
+    color: #951e17; }
+  #colours #colours__choice .fas:nth-child(3) {
+    color: #6e6e71; }
+  #colours #colours__choice .fas:nth-child(4) {
+    color: #b4ac74; }
+  #colours #colours__choice .fas:nth-child(5) {
+    color: #14172e; }
+  #colours #colours__choice .fas:nth-child(6) {
+    color: #20368a; }
+  #colours #colours__choice .fas:nth-child(7) {
+    color: #000; }
+  #colours #colours__choice .fas:nth-child(8) {
+    color: #686e69; }
+  #colours #colours__choice .fas:last-child {
+    color: #898886; }
+
+#colours #colours__types {
+  display: flex;
+  text-align: center;
+  padding: 0 150px; }
+  #colours #colours__types div {
+    display: block;
+    margin: 0 auto; }
+    #colours #colours__types div#non_metallic {
+      padding: 20px 40px;
+      border-bottom: 1px solid #000;
+      margin-right: 15px; }
+      #colours #colours__types div#non_metallic p {
+        width: 90px; }
+    #colours #colours__types div#metallic {
+      padding: 20px 200px;
+      border-bottom: 1px solid grey;
+      margin-left: 15px; }
+      #colours #colours__types div#metallic p {
+        color: grey; }
