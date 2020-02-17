@@ -24,6 +24,9 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4; }
 
+.shift {
+  height: 250px !important; }
+
 #navbar__main {
   display: grid;
   grid-template-areas: 'logo links';
@@ -81,6 +84,8 @@ body {
           text-decoration: none;
           color: #000;
           font-size: 1.2rem; }
+  #navbar__main #hamburger__menu {
+    display: none; }
 
 #navbar__secondary {
   display: flex;
@@ -111,7 +116,7 @@ body {
 
 #showcase {
   background: #333 url("../img/main.jpg") no-repeat center center/cover;
-  height: 70vh;
+  height: 600px;
   color: #fff; }
   #showcase .showcase__content {
     display: flex;
@@ -164,7 +169,7 @@ body {
         color: #fff; }
 
 #custom #custom__content {
-  height: 85vh; }
+  height: 850px; }
 
 .container #dimensions__content {
   padding: 50px;
@@ -253,34 +258,37 @@ body {
       #colours #colours__types div#metallic p {
         color: grey; }
 
-#interior__content {
+.container #interior__content {
   display: grid;
   grid-template-areas: 'dashboard dashboard dashboard' 'titanium zetec titanium-b';
   grid-gap: 1.2rem; }
-  #interior__content img {
+  .container #interior__content img {
     grid-area: dashboard;
     width: 95%;
-    height: 43vh;
+    height: 400px;
     display: block;
     margin: 0 auto; }
-  #interior__content .interior-card {
+  .container #interior__content .interior-card {
     display: block;
-    margin: auto;
+    margin: 0 auto;
     width: 85%;
-    height: 250px; }
-    #interior__content .interior-card img {
+    height: 300px; }
+    .container #interior__content .interior-card img {
       width: 100%;
-      height: 60%;
+      height: 150px;
       margin: 0 0 30px 0; }
-  #interior__content .interior-card--description {
+  .container #interior__content .interior-card--description {
     display: flex;
     justify-content: space-between; }
-  #interior__content #titanium {
+  .container #interior__content #titanium {
     grid-area: titanium; }
-  #interior__content #zetec {
+  .container #interior__content #zetec {
     grid-area: zetec; }
-  #interior__content #titanium-black {
+  .container #interior__content #titanium-black {
     grid-area: titanium-b; }
+
+.container #btn-int {
+  margin-top: -50px; }
 
 #gallery {
   overflow: hidden;
@@ -356,7 +364,7 @@ body {
 
 #motability {
   background: #333 url("../img/motability.jpg") no-repeat center center/cover;
-  height: 70vh;
+  height: 700px;
   color: #fff; }
   #motability .motability__content {
     display: flex;
@@ -382,7 +390,7 @@ body {
 
 footer {
   color: grey;
-  height: 35vh;
+  height: 350px;
   background: #43484d; }
   footer #footer__content {
     display: grid;
@@ -463,18 +471,13 @@ footer {
 #navbar__secondary ul div a {
   margin: 0 30px; }
 
-#showcase {
-  height: 35vh; }
-  #showcase .showcase__content .showcase__content--card {
-    margin-left: 0;
-    padding: 20px; }
-    #showcase .showcase__content .showcase__content--card .btn {
-      display: block;
-      margin: 10px auto;
-      width: 80%; }
-
-#custom #custom__content {
-  height: 60vh; }
+#showcase .showcase__content .showcase__content--card {
+  margin-left: 0;
+  padding: 20px; }
+  #showcase .showcase__content .showcase__content--card .btn {
+    display: block;
+    margin: 10px auto;
+    width: 80%; }
 
 #custom .custom__links {
   display: block;
@@ -490,27 +493,24 @@ footer {
     margin-top: 40px;
     width: 100%; }
 
-#layout__content div img {
-  width: 100%; }
+#colours {
+  margin-top: 70px; }
 
 #interior__content {
   margin-bottom: 80px; }
-  #interior__content img {
-    height: 25vh; }
 
 #motability .motability__content .motability__content--card {
   margin-left: 0; }
 
-footer {
-  height: 25vh; }
-  footer #footer__content .logo-box img {
-    width: 100%; }
-  footer .links-box {
-    margin: 0; }
-    footer .links-box a {
-      margin-top: 20px;
-      color: #fff;
-      padding: 0; }
+footer #footer__content .logo-box img {
+  width: 100%; }
+
+footer .links-box {
+  margin: 0; }
+  footer .links-box a {
+    margin-top: 20px;
+    color: #fff;
+    padding: 0; }
 
 @media (max-width: 768px) {
   #navbar__main {
@@ -533,10 +533,125 @@ footer {
       display: block;
       margin: 10px auto;
       width: 80%; }
-  #custom #custom__content {
-    height: 60vh; }
   #custom .custom__links .custom__links--content a {
     padding: 10px 50px; }
+  #layout__content {
+    margin-top: 100px;
+    padding: 0 30px; }
+    #layout__content div #imgOne {
+      width: 80%;
+      height: 200px; }
+    #layout__content div #imgTwo {
+      width: 100%;
+      height: 200px; }
+  .container #interior__content img {
+    grid-area: dashboard;
+    width: 95%;
+    height: 300px;
+    display: block;
+    margin: 0 auto; }
+  .container #btn-int {
+    margin-top: -50px; }
+  #colours #colours__types {
+    padding: 0; }
+  #motability .motability__content .motability__content--card h2 {
+    font-size: 20px !important; }
+  #motability .motability__content .motability__content--card p {
+    display: none; }
+  #motability .motability__content .motability__content--card .btn {
+    display: none !important; }
+  footer #footer__content .logo-box img {
+    width: 100%; }
+  footer .links-box {
+    margin: 0; }
+    footer .links-box a {
+      margin-top: 20px;
+      color: #fff;
+      padding: 0; } }
+
+@media (max-width: 500px) {
+  #navbar__main {
+    display: block; }
+    #navbar__main #navbar__box--logo {
+      height: 100px; }
+      #navbar__main #navbar__box--logo img {
+        width: 50%;
+        display: block;
+        margin: 20px auto; }
+      #navbar__main #navbar__box--logo #hamburger__menu {
+        display: initial; }
+        #navbar__main #navbar__box--logo #hamburger__menu ul {
+          transition: 0.3s all ease;
+          position: absolute;
+          width: 100%;
+          height: 120px;
+          left: -900px; }
+          #navbar__main #navbar__box--logo #hamburger__menu ul li {
+            margin-top: 5px; }
+        #navbar__main #navbar__box--logo #hamburger__menu .open {
+          left: 0px !important; }
+        #navbar__main #navbar__box--logo #hamburger__menu .hamburger {
+          position: absolute;
+          top: 20px;
+          left: 10px; }
+        #navbar__main #navbar__box--logo #hamburger__menu .hamburger:hover {
+          cursor: pointer; }
+        #navbar__main #navbar__box--logo #hamburger__menu .hamburger span {
+          display: block;
+          background: #000;
+          margin: 6px 0;
+          height: 4px;
+          width: 36px;
+          border-radius: 2px;
+          position: relative;
+          transition: 0.3s; }
+        #navbar__main #navbar__box--logo #hamburger__menu .change.first-bar {
+          top: 11px;
+          transform: rotate(45deg); }
+        #navbar__main #navbar__box--logo #hamburger__menu .change.second-bar {
+          opacity: 0; }
+        #navbar__main #navbar__box--logo #hamburger__menu .change.third-bar {
+          bottom: 9px;
+          transform: rotate(-45deg); }
+        #navbar__main #navbar__box--logo #hamburger__menu .menu-item {
+          transition: 0.3s all ease;
+          color: #000;
+          text-decoration: none;
+          font-size: 20px;
+          margin-left: 20px; }
+    #navbar__main #navbar__links {
+      display: none; }
+  #navbar__secondary ul {
+    display: none; }
+  #showcase .showcase__content .showcase__content--card h2 {
+    font-size: 20px !important; }
+  #showcase .showcase__content .showcase__content--card p {
+    display: none; }
+  #showcase .showcase__content .showcase__content--card .btn {
+    display: none; }
+  #custom .custom__links .custom__links--content a {
+    width: 45%;
+    padding: 3px;
+    margin: 3px;
+    border: 1px solid blue !important; }
+  #custom #custom__content {
+    height: 1050px; }
+  .container #dimensions__content {
+    padding: 0;
+    grid-template-columns: 1fr; }
+  #colours #colours__choice {
+    flex-direction: column; }
+  #colours #colours__types {
+    display: none; }
+  #layout__content div #imgOne,
+  #layout__content div #imgTwo {
+    height: 100px; }
+  .container #interior__content {
+    grid-template-areas: 'titanium' 'zetec' 'titanium-b'; }
+    .container #interior__content #dashboard {
+      display: none; }
+  #gallery {
+    display: none; }
   #motability .motability__content .motability__content--card {
     width: 45%;
     padding: 20px; }
@@ -544,13 +659,16 @@ footer {
       display: block;
       margin: 15px auto;
       width: 80%; }
-  footer {
-    height: 35vh; }
-    footer #footer__content .logo-box img {
-      width: 100%; }
-    footer .links-box {
-      margin: 0; }
-      footer .links-box a {
-        margin-top: 20px;
-        color: #fff;
-        padding: 0; } }
+  #contact__form {
+    display: block;
+    margin: 10px auto;
+    float: none;
+    width: 80vw; }
+    #contact__form h2 {
+      font-size: 20px !important; }
+    #contact__form p {
+      font-size: 14px; }
+  footer #footer__content {
+    grid-template-columns: 1fr; }
+  footer .links-box {
+    display: none; } }

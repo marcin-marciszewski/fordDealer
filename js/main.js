@@ -52,3 +52,29 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
+
+// Hamburger menu
+const navTriggerEl = document.querySelector(".hamburger");
+const navEl = document.querySelector(".links");
+const logo = document.getElementById("navbar__box--logo");
+const hamburgerBarsEls = document.getElementsByClassName("bar");
+
+
+function toggleNav() {
+    navTriggerEl.addEventListener("click", function () {
+        if (logo) {
+            logo.classList.toggle("shift");
+        }
+
+        navEl.classList.toggle("open");
+        animateHamburber();
+
+    })
+}
+
+function animateHamburber() {
+    for (let bar of hamburgerBarsEls) {
+        bar.classList.toggle("change");
+    }
+}
+toggleNav();
