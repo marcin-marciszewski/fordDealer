@@ -143,7 +143,9 @@ body {
     height: 100px;
     list-style: none;
     display: inline-table;
-    color: blue; }
+    color: blue;
+    margin-bottom: -30px;
+    padding: 0 55px; }
     #custom .custom__links .custom__links--content a {
       white-space: nowrap;
       width: 25%;
@@ -162,7 +164,7 @@ body {
         color: #fff; }
 
 #custom #custom__content {
-  height: 80vh; }
+  height: 85vh; }
 
 .container #dimensions__content {
   padding: 50px;
@@ -192,6 +194,9 @@ body {
   margin: 0 auto;
   width: 280px;
   padding: 15px; }
+
+#layout__content {
+  padding: 0 30px; }
 
 #colours img {
   width: 80%;
@@ -247,3 +252,32 @@ body {
       margin-left: 15px; }
       #colours #colours__types div#metallic p {
         color: grey; }
+
+#interior__content {
+  display: grid;
+  grid-template-areas: 'dashboard dashboard dashboard' 'titanium zetec titanium-b';
+  grid-gap: 1.2rem; }
+  #interior__content img {
+    grid-area: dashboard;
+    width: 95%;
+    height: 45vh;
+    display: block;
+    margin: 0 auto; }
+  #interior__content .interior-card {
+    display: block;
+    margin: auto;
+    width: 85%;
+    height: 250px; }
+    #interior__content .interior-card img {
+      width: 100%;
+      height: 60%;
+      margin: 0 0 30px 0; }
+  #interior__content .interior-card--description {
+    display: flex;
+    justify-content: space-between; }
+  #interior__content #titanium {
+    grid-area: titanium; }
+  #interior__content #zetec {
+    grid-area: zetec; }
+  #interior__content #titanium-black {
+    grid-area: titanium-b; }
