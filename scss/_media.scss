@@ -186,7 +186,7 @@ footer {
     }
 
     #custom {
-        #custom__content {}
+
 
         .custom__links {
             .custom__links--content {
@@ -238,23 +238,7 @@ footer {
         }
     }
 
-    #motability {
-        .motability__content {
-            .motability__content--card {
-                h2 {
-                    font-size: 20px !important;
-                }
 
-                p {
-                    display: none;
-                }
-
-                .btn {
-                    display: none !important;
-                }
-            }
-        }
-    }
 
 
     footer {
@@ -418,7 +402,7 @@ footer {
         }
 
         #custom__content {
-            height: 1050px;
+            height: 1020px;
         }
     }
 
@@ -428,6 +412,10 @@ footer {
             grid-template-columns: 1fr;
         }
 
+    }
+
+    #description {
+        padding-top: 0;
     }
 
     #colours {
@@ -441,6 +429,8 @@ footer {
     }
 
     #layout__content {
+        margin-top: 150px;
+
         div {
 
             #imgOne,
@@ -481,6 +471,24 @@ footer {
                     display: block;
                     margin: 15px auto;
                     width: 80%;
+                }
+            }
+        }
+    }
+
+    #motability {
+        .motability__content {
+            .motability__content--card {
+                h2 {
+                    font-size: 20px !important;
+                }
+
+                p {
+                    display: none;
+                }
+
+                .btn {
+                    display: none !important;
                 }
             }
         }

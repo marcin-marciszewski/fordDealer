@@ -554,12 +554,6 @@ footer .links-box {
     margin-top: -50px; }
   #colours #colours__types {
     padding: 0; }
-  #motability .motability__content .motability__content--card h2 {
-    font-size: 20px !important; }
-  #motability .motability__content .motability__content--card p {
-    display: none; }
-  #motability .motability__content .motability__content--card .btn {
-    display: none !important; }
   footer #footer__content .logo-box img {
     width: 100%; }
   footer .links-box {
@@ -635,17 +629,21 @@ footer .links-box {
     margin: 3px;
     border: 1px solid blue !important; }
   #custom #custom__content {
-    height: 1050px; }
+    height: 1020px; }
   .container #dimensions__content {
     padding: 0;
     grid-template-columns: 1fr; }
+  #description {
+    padding-top: 0; }
   #colours #colours__choice {
     flex-direction: column; }
   #colours #colours__types {
     display: none; }
-  #layout__content div #imgOne,
-  #layout__content div #imgTwo {
-    height: 100px; }
+  #layout__content {
+    margin-top: 150px; }
+    #layout__content div #imgOne,
+    #layout__content div #imgTwo {
+      height: 100px; }
   .container #interior__content {
     grid-template-areas: 'titanium' 'zetec' 'titanium-b'; }
     .container #interior__content #dashboard {
@@ -659,6 +657,12 @@ footer .links-box {
       display: block;
       margin: 15px auto;
       width: 80%; }
+  #motability .motability__content .motability__content--card h2 {
+    font-size: 20px !important; }
+  #motability .motability__content .motability__content--card p {
+    display: none; }
+  #motability .motability__content .motability__content--card .btn {
+    display: none !important; }
   #contact__form {
     display: block;
     margin: 10px auto;
